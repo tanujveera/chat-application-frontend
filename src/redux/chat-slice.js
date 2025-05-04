@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Async thunk to fetch chat history
 export const fetchChatHistory = createAsyncThunk("chat/fetchHistory", async () => {
-  const response = await fetch("http://localhost:8080/chat/history");
+  const response = await fetch("http://localhost:8081/chat/history");
   return response.json();
 });
 

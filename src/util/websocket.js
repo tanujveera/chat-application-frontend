@@ -2,7 +2,7 @@ import SockJS from "sockjs-client";
 import { Client } from "@stomp/stompjs";
 
 const stompClient = new Client({
-  brokerURL: "http://localhost:8080/ws-native",
+  brokerURL: "http://localhost:8081/ws-native",
   reconnectDelay: 5000,
 
   onDisconnect: () => console.log("❌ Disconnected from WebSocket"),
